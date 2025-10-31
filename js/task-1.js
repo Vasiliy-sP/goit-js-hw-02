@@ -1,11 +1,11 @@
 function 
-makeTransaktion(orderedQuantity, pricePerDroid, customerCredits) {
+makeTransaction(orderedQuantity, pricePerDroid, customerCredits) {
     const totalPrice = orderedQuantity * pricePerDroid;
     if (totalPrice > customerCredits) {
         return "Insufficient funds!";
     }
 
-    return `You ordered $ {orderedQuantity} droids worth $ {totalPrice} credits!`;
+    return `You ordered ${orderedQuantity} droids worth ${totalPrice} credits!`;
 }
 
 
